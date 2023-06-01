@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Withianian Factions</title>
+    <link rel="icon" href="https://images-ext-2.discordapp.net/external/-dYlOUOj0jAzRSxNztf4MkVLqoxQ-iXl4R6DGvyEQ6I/%3Fsize%3D4096/https/cdn.discordapp.com/icons/979144367027683408/f221f56dd4d20eca15e43113fbb834f7.png">
+    <style>
+        body {
+            background-image: url("https://64.media.tumblr.com/dfbc2e6c705db9df5448e9a2c516d063/tumblr_nulbysPvLz1rpm29co1_500.gifv");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: "Arial", sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .title {
+            font-size: 32px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .slideshow-container {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .slideshow-container img {
+            width: 100%;
+            height: auto;
+            display: none;
+            animation: fade 1s ease-in-out infinite alternate;
+        }
+
+        .slideshow-container img.active {
+            display: block;
+        }
+
+        .slideshow-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .slideshow-buttons button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .join-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 4px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .join-button:hover {
+            background-color: #45a049;
+        }
+
+        .discord-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+        }
+
+        .status-container {
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            overflow: hidden;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .tab button {
+            background-color: #222;
+            color: #fff;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: background-color 0.3s;
+            font-size: 18px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .tab button:hover {
+            background-color: #444;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+            color: #000;
+            border-bottom: 2px solid #4CAF50;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            color: #fff;
+            animation: fade 1s;
+        }
+
+        .tabcontent.active {
+            display: block;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Withianian Factions</h1>
+
+        <div class="slideshow-container">
+            <img class="slide active" src="https://media.discordapp.net/attachments/1111450252914987069/1113830698378342491/Withanian-Network-10-31-2022.png" alt="Slide 1">
+            <img class="slide" src="https://media.discordapp.net/attachments/1111450252914987069/1113830696734162974/56dab225-43b0-4e12-a61e-7540aa033c0b.png?width=854&height=480" alt="Slide 2">
+            <img class="slide" src="https://media.discordapp.net/attachments/1111450252914987069/1113830697371701268/183c82c7-95b0-461c-9a43-454c424ac4da.png?width=854&height=480" alt="Slide 3">
+            <img class="slide" src="https://media.discordapp.net/attachments/1111450252914987069/1113830697984065577/4a32808a-1a69-4208-af21-a2ac0db6c90a.png?width=854&height=480" alt="Slide 4">
+        </div>
+
+        <div class="slideshow-buttons">
+            <button onclick="plusSlides(-1)">&#8249;</button>
+            <button onclick="plusSlides(1)">&#8250;</button>
+        </div>
+
+        <a href="https://123.com" class="join-button">Join Now!</a>
+        
+        <div class="status-container">
+            Current server status: <span style="color: #ff0000;">🔴</span>
+        </div>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'rules')">Rules</button>
+            <button class="tablinks" onclick="openTab(event, 'staff')">Staff Members</button>
+            <button class="tablinks" onclick="openTab(event, 'faq')">FAQ</button>
+        </div>
+
+        <div id="rules" class="tabcontent active">
+            <h2>Server Rules</h2>
+            <p>1. No griefing<br>
+                2. No cheating<br>
+                3. Respect other players<br>
+                4. No spamming or advertising<br>
+                5. Have fun!</p>
+        </div>
+
+        <div id="staff" class="tabcontent">
+            <h2>Staff Members</h2>
+            <p>Our dedicated team of staff members is here to assist you:</p>
+            <ul>
+                <li>owner: king of withiania</li>
+                <li>Moderator: fish</li>
+                <li>Helper: mr.rizz</li>
+            </ul>
+        </div>
+
+        <div id="faq" class="tabcontent">
+            <h2>Frequently Asked Questions</h2>
+            <p>Q: How do I join the server?<br>
+                A: Simply click on the "Join Now" button above.<br><br>
+                Q: Are there any banned items?<br>
+                A: lmao like illigles.<br><br>
+                Q: Can I bring my friends?<br>
+                A: Of course! Feel free to invite your friends to join the server.</p>
+                Q: is the server online?<br>
+                A: can you read?.</p>
+        </div>
+
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, you can contact us via email at <a href="https://www.youtube.com/watch?v=jPyGxUdlmu8&t=2s">mr.rizz#8961</a> or through our Discord server.</p>
+        </div>
+
+        <a href="https://discord.gg/pDVpV2jsW9" target="_blank">
+            <img class="discord-button" src="https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ=w240-h480-rw" alt="Discord">
+        </a>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            const slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        function openTab(evt, tabName) {
+            const tabcontent = document.getElementsByClassName("tabcontent");
+            const tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
